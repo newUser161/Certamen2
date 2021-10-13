@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">        
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/iconos.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="row" id="datosPersonales">            
+                <div class="col-2" >
+                    <img src="assets/PFPplaceholder.png" alt="fotoperfil">     
+                </div>
+                <div class="col" id="info">
+                    <h2 id="nombre">Pepito Pérez</h2>
+                    <span id="fechanacimiento"> Septiembre 21, 1979, 43 años</span>
+                    <br><br><a href="informacion.html"> Editar</a>
+                </div>                        
+            </div><br>
+        
+            <div class="row" id="datosClinicos">                    
+                <div class="col-4" id="signosvitales">                    
+                    <br><h3>ULTIMOS SIGNOS VITALES</h3> <br>
+                    <div id="contSignosVitales"> 
+                        <div class="row">
+                            <div class="col-2" id="icono">
+                                <span class="material-icons">
+                                    expand_less
+                                </span>
+                            </div>
+                            <div class="col-7">
+                                <span> Estatura </span>
+                            </div>
+                            <div class="col-2">
+                                <span id="estatura"> 1.75 </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2" id="icono">
+                                <span class="material-icons">
+                                    expand_less
+                                </span>
+                            </div>
+                            <div class="col-7">
+                                <span> Peso </span>
+                            </div>
+                            <div class="col-3">
+                                <span id="peso"> 70 Kg </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2" id="icono">
+                                <span class="material-icons">
+                                    expand_less
+                                </span>
+                            </div>
+                            <div class="col-4">
+                                <span> Frecuencia Cardíaca </span>
+                            </div>
+                            <div class="col-3"></div>
+                            <div class="col-2 ">
+                                <span id="frecuencia"> 70 </span>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>        
+                     
+                <div class="col-6" id="antecedentes">                
+                    <span>Antecedentes Clínicos</span> 
+                    <span class="material-icons">
+                        add_circle_outline
+                        </span>
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-8">
+                            <p>20-10-2020</p>
+                            <p>Hospitalizado por bronquitis</p>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                <span class="material-icons iconoEliminar">
+                                    delete
+                                </span>                            
+                            </div>
+                            <div class="row">                                
+                                Eliminar                                
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-8">
+                            <p>20-01-2009</p>
+                            <p>Hospitalizado por intoxicación</p>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                <span class="material-icons iconoEliminar">
+                                    delete
+                                </span>                            
+                            </div>
+                            <div class="row">                                
+                                Eliminar                                
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-8">
+                            <p>20-01-2009</p>
+                            <p>Hospitalizado por XXXXX</p>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                <span class="material-icons iconoEliminar">
+                                    delete
+                                </span>                            
+                            </div>
+                            <div class="row">                                
+                                Eliminar                                
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    
+                </div>  
+                
+            </div>
+        </div>
+        
+        
+        <script data-main="js/inicio.js" src="js/require-jquery.js" async></script> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous" async></script>            
+    </body>
+</html>

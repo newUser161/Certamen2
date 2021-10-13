@@ -1,0 +1,131 @@
+body {
+  background: #b6eeff;
+  background: linear-gradient(80deg, #aaebff 0%, white 100%);
+}
+
+.container {
+  background-color: rgba(172, 172, 172, 0.15);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+#datosPersonales {
+  padding-top: 1%;
+}
+
+#datosPersonales img {
+  width: 100%;
+  padding: 1%;
+  margin-top: 5%;
+  border: 3px solid black;
+}
+
+#datosPersonales h2 {
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 10%;
+}
+
+#datosPersonales p {
+  margin-top: 3%;
+  font-size: 12px;
+}
+
+#signosvitales h3 {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#signosvitales #contSignosVitales {
+  border: 2px solid black;
+  padding: 1%;
+  margin-right: 5%;
+}
+
+#signosvitales #contSignosVitales span {
+  font-size: 16px;
+}
+
+#signosvitales #contSignosVitales .material-icons {
+  rotate: -90deg;
+  font-size: 35px;
+}
+
+.editable {
+  border: 2px solid black;
+  padding: 5%;
+  width: 80%;
+}
+
+.signos {
+  margin-top: 5%;
+}
+
+#informacion h2 {
+  font-weight: bold;
+  padding-top: 20%;
+  padding-bottom: 5%;
+  font-size: 40px;
+}
+
+#informacion label {
+  font-weight: bold;
+}
+
+#informacion h3 {
+  font-weight: bold;
+  padding-top: 2%;
+  font-size: 1rem;
+}
+
+#antecedentes span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#antecedentes .material-icons {
+  font-size: 24px;
+  padding-left: 1%;
+  position: relative;
+  top: 7px;
+}
+
+#antecedentes .iconoEliminar {
+  margin-bottom: 1%;
+  padding-left: 5%;
+  font-size: 200%;
+}
+
+#antecedentes .antecedente {
+  border: 2px solid black;
+  margin: 2%;
+  padding-top: 2%;
+}
+
+#antecedentes .botonEliminar {
+  margin-top: 3%;
+}
+
+#contenedorFormularioAntecedentes span {
+  font-weight: bold;
+  margin-bottom: 1%;
+  font-size: 1rem;
+}
+
+#datosantecedentes {
+  border: 2px solid black;
+  padding: 1%;
+  padding-left: 5%;
+  padding-bottom: 1%;
+  margin-bottom: 4%;
+  width: 78%;
+}
+
+#datosantecedentes #motivo {
+  width: 60%;
+}
+
+#datosantecedentes #fechahospitalizacion {
+  width: 30%;
+}
+/*# sourceMappingURL=estilosInformacion.css.map */

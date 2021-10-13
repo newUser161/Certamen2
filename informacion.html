@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">        
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/estilosInformacion.css">
+    </head>
+    <body>        
+        <div class="container">
+            <form class="needs-validation " novalidate id="formulario" onsubmit="validarDatos()" method="POST">
+                <div class="row">
+                    <div class="col-4" id="datosPersonales">            
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="assets/PFPplaceholder.png" alt="fotoperfil">
+                            </div>
+                            <div class="col">
+                                <h2>Pepito Pérez</h2>
+                                <p> Septiembre 21, 1979, 43 años</p>
+                                <p> Editar</p>
+                            </div>
+                        </div>   
+                        <div class="row">
+                            <div class="col-8" id="signosvitales"><br>
+                                <h3>ULTIMOS SIGNOS VITALES</h3> 
+                                <div id="contSignosVitales"> 
+                                    <div class="row signos">
+                                        <div class="col-2" id="icono">
+                                            <span class="material-icons">
+                                                expand_less
+                                            </span>
+                                        </div>
+                                        <div class="col-5">
+                                            <span> Estatura </span>
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="form-group">       
+                                                <input type="text" id="estatura" class="editable form-control" value="1.75m" pattern="^[0-2]{1}.[0-9]{1,2}m$" >                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row signos">
+                                        <div class="col-2" id="icono">
+                                            <span class="material-icons">
+                                                expand_less
+                                            </span>
+                                        </div>
+                                        <div class="col-5">
+                                            <span> Peso </span>
+                                        </div>
+                                        <div class="col-5">
+                                            <input type="text" id="peso" class="editable form-control" value="70Kg" pattern="^[0-9]{1,3}Kg$">                                            
+                                        </div>
+                                    </div>
+                                    <div class="row signos">
+                                        <div class="col-2" id="icono">
+                                            <span class="material-icons">
+                                                expand_less
+                                            </span>
+                                        </div>
+                                        <div class="col-5">
+                                            <span> Frecuencia Cardíaca </span>
+                                        </div>
+                                        
+                                        <div class="col-5 ">
+                                            <input type="text" id="frecuencia" class="editable form-control" value="70" pattern="^[0-9]{2,3}$">                                            
+                                        </div>
+                                    </div>                    
+                                </div>                            
+                            </div>    
+                        </div>     
+                    </div>        
+                    <div class="col-6" id="informacion">
+                        <h2>Información</h2>                    
+                        
+                        <div class="form-group">       
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="nombreCompleto" class="form-label">Nombre Completo</label>                                                 
+                                </div>    
+                                <div class="col">
+                                    <input type="text" class="form-control" id="nombreCompleto" name="campoInfo" placeholder="" value="" required>                        
+                                    <div class="invalid-feedback">
+                                        Debe ingresar el nombre
+                                    </div><br>
+                                </div>                                
+                            </div>
+                        </div>                                
+                        <div class="form-group"> 
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="edad" class="form-label">Edad</label>             
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" id="edad" name="campoInfo" placeholder="" value="" pattern="[0-9]{1,3}" required>
+                                    <div class="invalid-feedback">
+                                        Debe ingresar la edad
+                                    </div><br>
+                                </div>                            
+                            </div>      
+                        </div>                                                
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="genero" class="form-label">Género</label>
+                                </div>
+                                <div class="col">
+                                    <select class="form-control" id="genero"  required>
+                                    <option value="" disabled selected hidden>Sin definir</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>                                                          
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Debe ingresar un genero
+                                    </div><br>
+                                </div>
+                            </div>
+                        </div>  
+                        
+                        <div class="form-group">       
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="fechanacimiento" class="form-label">Fecha de Nacimiento</label>             
+                                </div>
+                                <div class="col">
+                                    <input type="date" class="form-control" id="fechanacimiento" placeholder="" value="" required>                        
+                                    <div class="invalid-feedback">
+                                        Debe ingresar una fecha
+                                    </div><br>
+                                </div>
+                            </div>
+                        </div>        
+
+                        <div class="form-group">       
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>             
+                                </div>
+                                <div class="col">
+                                    <input type="email" class="form-control" id="correo" name="campoInfo" placeholder="coreo@ejemplo" value="" required>                        
+                                    <div class="invalid-feedback">
+                                        Debe ingresar un correo
+                                    </div><br>
+                                </div>
+                            </div>
+                        </div>        
+                        <div class="form-group">       
+                            <div class="row">
+                                <div class="col-4">                            
+                                    <label for="telefono" class="form-label">Número Telefónico</label>             
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" id="telefono" name="campoInfo" placeholder="9XXXXXXXX" value="" pattern="9[0-9]{8}" maxlength="9" required>                        
+                                    <div class="invalid-feedback">
+                                        Debe ingresar un teléfono
+                                    </div><br>
+                                </div>
+                            </div>
+                        </div>        
+                        <div class="form-group">   
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="rut" class="form-label">RUT</label>             
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" id="rut" placeholder="XXXXXXXX-X" name="campoInfo" value="" pattern="[0-9]{7,8}-[kK|0-9]{1}" maxlength="10" required>                        
+                                    <div class="invalid-feedback" id="nulo">
+                                        Debe ingresar un RUT
+                                    </div>
+                                    <div class="invalid-feedback invalido" id="invalido" hidden>
+                                        RUT invalido
+                                    </div><br>
+                                </div>
+                            </div>    
+                        </div>        
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="region" class="form-label">Región</label>
+                                </div>
+                                <div class="col" id="selectorRegion">
+                                    <select class="form-control" id="region" required>
+                                    <option value="" disabled hidden selected> Seleccione una región</option>                                    
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Debe ingresar una región
+                                    </div><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="comuna" class="form-label">Comuna</label>
+                                </div>
+                                <div class="col">
+                                    <select class="form-control" id="comuna" placeholder="Sin definir" required>
+                                    <option value="" disabled hidden selected> Seleccione una comuna</option>                                                     
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Debe ingresar una comuna
+                                    </div><br>
+                                </div>
+                            </div>
+                        </div>                    
+                        <button type="submit" class="btn btn-primary" id="botonSubmit">Actualizar</button><br><br>                    
+                    </div>
+                </div>
+            </form>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-6">
+                    
+                    <!--Si los antecedentes no aparecen al primer intento, recargar la pagina un par de veces con control+shift+R-->
+                    <!--Si los antecedentes no aparecen al primer intento, recargar la pagina un par de veces con control+shift+R-->
+                    <!--Si los antecedentes no aparecen al primer intento, recargar la pagina un par de veces con control+shift+R-->                                       
+                    <div id="antecedentes" >
+                        <span>Antecedentes Clínicos</span>                         
+                        <span class="material-icons" id="botonMostrarFormularioNuevoAntecedente" onclick="mostrarFormularioNuevoAntecedente()">
+                        add_circle_outline
+                        </span>                                                  
+                    </div>
+                    
+                    <div id="contenedorFormularioAntecedentes" hidden>
+                        <span>Datos Antecedentes Clínicos</span>
+                        <div id="datosantecedentes">
+                            <form class="needs-validation " novalidate id="formulario2" method="POST">                        
+                                <div class="form-group">                                       
+                                    <input type="text" class="form-control" id="motivo" placeholder="Motivo hospitalización" value="" required>                        
+                                    <div class="invalid-feedback">
+                                        Debe ingresar el motivo de la hospitalización
+                                    </div><br>
+                                </div>
+                                <div class="form-group">                                       
+                                    <input type="date" class="form-control" id="fechahospitalizacion" placeholder="Fecha ingreso" value="" required>                        
+                                    <div class="invalid-feedback">
+                                        Debe ingresar la fecha de ingreso
+                                    </div><br>
+                                </div>
+                                <button type="button" class="btn btn-primary" id="botonSubmitAntecedente" onclick="agregarNuevoAntecedente()">Crear</button> 
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>        
+        <script data-main="js/inicio.js" src="js/require-jquery.js" async></script> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous" async></script>      
+    </body>
+</html>

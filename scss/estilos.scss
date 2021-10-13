@@ -1,0 +1,66 @@
+body{
+    background: rgb(182, 238, 255);
+    background: linear-gradient(80deg, rgba(170,235,255,1) 0%, rgba(255,255,255,1) 100%);
+}
+.container{
+    background-color: rgba(172, 172, 172, 0.15);  
+    backdrop-filter: blur(5px);
+}
+
+#datosPersonales{
+    img{
+        width: 100%;
+        padding: 1%;
+        margin-top: 5%;
+        border: 3px solid black;    
+    }
+    H2{
+        font-weight: bold;
+    }
+    #info{
+        margin-top: 3%;
+        float: left;
+    }
+}
+
+hr {
+    width: 65%;
+    border-style: solid;
+    color: black;
+    border-width: 2px;
+  }
+
+#datosClinicos{
+    h3{
+        font-weight: bold;
+        font-size: 16px;
+    }
+    #contSignosVitales{
+        border: 2px solid black;   
+        padding: 1%;
+        .material-icons{
+            rotate: -90deg;
+            font-size: 50px;
+        }
+        margin-right: 10%;
+    }    
+}
+
+#antecedentes{
+    span{
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .material-icons{
+        font-size: 24px;
+        padding-left: 1%;        
+        position: relative;
+        top: 7px;
+    }
+    .iconoEliminar{
+        margin-bottom: 5%;
+        padding-left: 5%;
+        font-size: 200%;
+    }
+    
+}

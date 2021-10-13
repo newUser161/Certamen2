@@ -1,0 +1,123 @@
+body{
+    background: rgb(182, 238, 255);
+    background: linear-gradient(80deg, rgba(170,235,255,1) 0%, rgba(255,255,255,1) 100%);
+}
+.container{
+    background-color: rgba(172, 172, 172, 0.15);  
+    backdrop-filter: blur(5px);
+}
+#datosPersonales{
+    padding-top: 1%;
+    img{
+        width: 100%;
+        padding: 1%;
+        margin-top: 5%;
+        border: 3px solid black;    
+    }
+    h2{
+        font-weight: bold;
+        font-size: 18px;
+        padding-top: 10%;        
+    }
+    p{
+        margin-top: 3%;
+        font-size: 12px;
+    }
+}
+
+#signosvitales{
+    h3{
+        font-weight: bold;
+        font-size: 12px;
+    }
+    #contSignosVitales{
+        border: 2px solid black;   
+        padding: 1%;
+        span{
+            font-size: 16px;
+        }
+        .material-icons{
+            rotate: -90deg;
+            font-size: 35px;
+
+        }
+        margin-right: 5%;
+    }    
+}
+.editable{
+    border: 2px solid black;   
+    padding: 5%;
+    width: 80%;
+    
+
+}
+.signos{
+    margin-top: 5%;    
+}
+
+#informacion{
+    h2{
+        font-weight: bold;
+        padding-top: 20%;
+        padding-bottom: 5%;
+        font-size: 40px;
+    }
+    label{
+        font-weight: bold;
+    }
+    h3{
+        font-weight: bold;
+        padding-top: 2%;        
+        font-size: 1rem;
+    }
+}
+
+#antecedentes{
+    span{
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .material-icons{
+        font-size: 24px;
+        padding-left: 1%;        
+        position: relative;
+        top: 7px;
+    }
+    .iconoEliminar{
+        margin-bottom: 1%;
+        padding-left: 5%;
+        font-size: 200%;
+    }
+    .antecedente{
+        border: 2px solid black;   
+        margin: 2%;
+        padding-top: 2%;
+
+    }
+    .botonEliminar{
+        margin-top: 3%;
+    }    
+}
+#contenedorFormularioAntecedentes{
+    span{
+        font-weight: bold;
+        margin-bottom: 1%;
+        font-size: 1rem;
+    }
+}
+#datosantecedentes{
+    border: 2px solid black;   
+    padding: 1%;
+    padding-left: 5%;
+    padding-bottom: 1%;
+    margin-bottom: 4%;
+    width: 78%;
+    #motivo{
+        width: 60%;
+    }
+    #fechahospitalizacion{
+        width: 30%;
+    }
+    
+
+}
